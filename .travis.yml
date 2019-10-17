@@ -2,8 +2,10 @@ language: python
 env:
   global:
     -SAY_MY_NAME=Heisenberg
+    -secure: "Tscq7kBnrXZ586uNhXwCT5q1nJOrHbELTza8C7v/wwP4ab6y32yh+PZZNnfYeyqs0WIXStmpvvFob97kiyj1Cs2tKowrWbkPGLNm6oyWt2Ejgh78bUrBZQd0vgPFVF6xZgHe4TheRhSoGVZ4VRxFg4rFjXV9NRY2Dha720pluFmd9UU8CqymhWQy0xIpyve2XJA6wJ0H9mrhB5EgjlQRyakbLsTfrdwIIcD/Jt1yDkIrJBSFLDKnnNc4AsFY6puEnIllQ6Pq5ZQCPdJuiQ5BoZupf0UwUUu1VIYY+ADgLBm+sBzFNrQcc4AnN/19C4VoHqgT+7BCmhDT7xy5xKK3/1cqa92oGKGZ5caIx0EDT9Yzn9vYnuqfA5dF+233hLju1mfSotpw5qpWWiMhUYq1uNxJ1G/ej7BP0ZSoXSa1eQEStNj2jytdW2MWAx1C3yxlmbGXBVh4OVgwTQI2BRHB26KuGA8fzAxkuAuPiczPMsVnfJjudy7koO9vCRqwKxOeRxbOe6M1UjHEh0l2LOCc4jxxTihIHOqa072r0YAgcMgojY/6FONV+3mrDXfP3dDfdP5lVF6HAT249XgN9De4qBWZxPel2MGQNFSYv6Du7KJ/QeOzcB4/dlgPZTCS1vEQdKlVuLXMmXc7iZu93oIpoNV/hxtqh3gQJrQgaXDAhnw="
 
 script:
   - python test.py
   - echo ciao
-  - echo SAY_MY_NAME
+  - echo $SAY_MY_NAME
+  - echo $secure
