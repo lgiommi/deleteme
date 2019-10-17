@@ -1,5 +1,9 @@
 language: python
+env:
+  global:
+    -SAY_MY_NAME=Heisenberg
 
 script:
   - python test.py
   - echo ciao
+  - echo SAY_MY_NAME
